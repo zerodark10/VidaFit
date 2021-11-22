@@ -1,4 +1,4 @@
-const CACHE ='cache-v3';
+const CACHE ='cache-v1';
 const CACHE_DINAMICO ='dinamico-v1';
 const CACHE_INMUTABLE ='inmutable-v1';
 
@@ -9,7 +9,7 @@ self.addEventListener('install', evento=>{
     aplicación*/
     const promesa =caches.open(CACHE)
         .then(cache=>{
-            return cache.addAll([
+            return Cache.addAll([
                 '/',
                 'Formulario.php',
                 'css/style.css',
