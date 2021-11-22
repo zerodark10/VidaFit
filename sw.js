@@ -14,7 +14,7 @@ self.addEventListener('install', evento=>{
                 'Formulario.php',
                 'css/style.css',
                 'splash.html',
-                'index.php',
+                'index.html',
                 'js/app.js',
                 'img/logo.png'
                 
