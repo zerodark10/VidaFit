@@ -16,7 +16,7 @@ self.addEventListener('install', evento=>{
                 'splash.html',
                 'index.php',
                 'js/app.js',
-                'img/logo.png',
+                'img/logo.png'
                 
             
 
