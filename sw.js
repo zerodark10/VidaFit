@@ -9,7 +9,7 @@ self.addEventListener('install', evento=>{
     aplicación*/
     const promesa =caches.open(CACHE)
         .then(cache=>{
-            return Cache.addAll([
+            return cache.addAll([
                 '/',
                 'Formulario.php',
                 'css/style.css',
