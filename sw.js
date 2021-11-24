@@ -16,7 +16,8 @@ self.addEventListener('install', evento=>{
                 'index.html',
                 'js/app.js',
                 'img/logo.png',
-                'home.html'
+                'home.html',
+                'mp4/bg.mp4'
                 
             
 
