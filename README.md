@@ -1,1 +1,1 @@
-# VidaFit
+# Vida-Fit
