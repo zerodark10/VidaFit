@@ -11,13 +11,13 @@ self.addEventListener('install', evento=>{
         .then(cache=>{
             return cache.addAll([
                 '/',
-                'Formulario.php',
+                'formulario.html',
                 'css/style.css',
-                'splash.html',
                 'index.html',
                 'js/app.js',
                 'img/logo.png',
-                'mp4/bg.mp4'
+                'mp4/bg.mp4',
+                'home.html'
                 
             
 
