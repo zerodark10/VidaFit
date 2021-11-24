@@ -1,7 +1,7 @@
 {
     "short_name":"Vida-Fit",
     "name":"Vida-Fit",
-    "start_url":"index.html",
+    "start_url":"home.html",
     "background_color":"#3456ab",
     "theme_color":"#3445ab",
     "display":"standalone",
