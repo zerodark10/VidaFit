@@ -1,9 +1,6 @@
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js')
-    .then(function(registration) {
-        console.log("Service Worker Registrado", registration);
-    })
-    .catch(function(err) {
-        console.log("Service Worker Fallo el Registro", err);
-    })
+if ( navigator.serviceWorker ) {
+    navigator.serviceWorker.register('./sw.js');
+    console.log ('Instalacion correcta');
+}else{
+    console.log('No se logro instalar');
 }
