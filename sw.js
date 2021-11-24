@@ -10,13 +10,13 @@ self.addEventListener('install', evento=>{
     const promesa =caches.open(CACHE)
         .then(cache=>{
             return cache.addAll([
-                '/',
+               
                 'formulario.html',
                 'css/style.css',
                 'index.html',
                 'js/app.js',
                 'img/logo.png',
-                'home.html',
+                'home.html'
                 
             
 
@@ -26,7 +26,7 @@ self.addEventListener('install', evento=>{
         //Separamos los archivos que no se modificarán en un espacio de cache inmutable
         const cacheInmutable =  caches.open(CACHE_INMUTABLE)
             .then(cache=>{
-                cache.add('');
+                cache.add('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
               });
        
             //Indicamos que la instalación espere hasta que las promesas se cumplan
