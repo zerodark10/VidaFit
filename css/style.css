@@ -51,6 +51,7 @@ body{
 .user{
 display: inline-flex;
 
+
 }
 
 .popular{
@@ -70,9 +71,10 @@ display: inline-flex;
 }
 
 .logo{
-    margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
 }
 
 
@@ -90,6 +92,9 @@ display: inline-flex;
     height: auto;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
+  }
+  h5{
+      color: #16191c;
   }
 
 
