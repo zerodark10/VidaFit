@@ -11,7 +11,6 @@ self.addEventListener('install', evento=>{
         .then(cache=>{
             return cache.addAll([
                
-                'formulario.html',
                 'css/style.css',
                 'index.html',
                 'js/app.js',
