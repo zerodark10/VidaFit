@@ -171,35 +171,6 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
  
- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
- <script>
-   window.OneSignal = window.OneSignal || [];
-   OneSignal.push(function() {
-     OneSignal.init({
-       appId: "4c1cf5c8-6e1f-4efd-905a-d189df4f0cb0",
-       safari_web_id: "",
-       notifyButton: {
-         enable: true,
-       },
-     });
-   });
- </script>
- <script>
-   function initialiseUI() {
-  // Set the initial subscription value
-  swRegistration.pushManager.getSubscription()
-  .then(function(subscription) {
-    isSubscribed = !(subscription === null);
-
-    if (isSubscribed) {
-      console.log('User IS subscribed.');
-    } else {
-      console.log('User is NOT subscribed.');
-    }
-
-    updateBtn();
-  });
-}
- </script>
+ 
   </body>
 </html>
