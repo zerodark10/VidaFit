@@ -170,6 +170,18 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
  
-    
+ <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+ <script>
+   window.OneSignal = window.OneSignal || [];
+   OneSignal.push(function() {
+     OneSignal.init({
+       appId: "4c1cf5c8-6e1f-4efd-905a-d189df4f0cb0",
+       safari_web_id: "",
+       notifyButton: {
+         enable: true,
+       },
+     });
+   });
+ </script>
   </body>
 </html>
