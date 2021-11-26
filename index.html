@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
    
     <link rel="stylesheet" href="js/bd.js">
+    
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/bbab06b81b.js" crossorigin="anonymous"></script>
@@ -182,6 +183,23 @@
        },
      });
    });
+ </script>
+ <script>
+   function initialiseUI() {
+  // Set the initial subscription value
+  swRegistration.pushManager.getSubscription()
+  .then(function(subscription) {
+    isSubscribed = !(subscription === null);
+
+    if (isSubscribed) {
+      console.log('User IS subscribed.');
+    } else {
+      console.log('User is NOT subscribed.');
+    }
+
+    updateBtn();
+  });
+}
  </script>
   </body>
 </html>
