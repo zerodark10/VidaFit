@@ -17,7 +17,21 @@
     <title>Vida-Fit</title>
   </head>
   <body class="bg-dark">
-      
+    <?php
+
+    include("php/base.php");
+    session_start();
+    if(!isset ($_SESSION['iduser'])){
+      header("Location: index.php");
+    }
+    $iduser = $_SESSION['iduser'];
+    
+    
+    $sql = "SELECT email ,Nombre FROM users WHERE email ='$iduser'";
+    $resultado =$conn->query($sql);
+    $row = $resultado->fetch_assoc();
+    
+    ?>
 
         <div class="col-lg-  d-flex flex-column align-items-end  ">
           <div class="container">
