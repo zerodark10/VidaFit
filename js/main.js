@@ -158,7 +158,7 @@ function cargarTabla(){
                 crearEtiqueta("td",tr, (td)=>{
                 /*Asignamos el valor de cada atributo del producto a la nueva columna
                 la validación indica que si el campo es el de precio se le agrege un signo de $*/
-                td.textContent =usuarios.estatura===usuarios[atributo]?`${usuarios[atributo]} `:usuarios[atributo];
+                td.textContent =usuarios.porcion===usuarios[atributo]?`${usuarios[atributo]} `:usuarios[atributo];
                
                 
                 })
