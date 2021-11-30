@@ -90,13 +90,13 @@ const ordenarCampos = usuario=>{
         /*asignamos al objto vacio cada columan con el valor del producto
         que se recibe*/
         id:usuario.id,
-        nombre:usuario.nombre,
-        edad:usuario.edad,
-        estatura:usuario.estatura,
-        peso:usuario.peso,
-        sexo:usuario.sexo,
-        indice:usuario.indice,
-        salud:usuario.salud
+        fecha:usuario.nombre,
+        comida:usuario.edad,
+        platillo:usuario.estatura,
+        porcion:usuario.peso,
+        cantidad:usuario.sexo,
+        agua:usuario.indice,
+        imagen:usuario.salud
         
     }
     //Retornamos el objeto con el producto ordenado
