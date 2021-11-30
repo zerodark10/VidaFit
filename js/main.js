@@ -91,8 +91,8 @@ btModificar.onclick=(evento)=>{
             platillo:estatura_usu.value,
             porcion:peso_usu.value,
             cantidad:sexo_usu.value,
-            agua:indice_usu.value,
-            imagen:salud_usu.value
+            agua:indice_usu.value
+            
         }).then((resultado)=>{//si se realiza la modificación
             if(resultado){
               //Limpiamos el formulario y recargamos la tabla
