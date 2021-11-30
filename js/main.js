@@ -50,7 +50,7 @@ btGuardar.onclick=(evento)=>{
     asignamos a cada campo el valor recuperado del formulario
     Nota: Recordar que flag retorna true si se gaurdo el registro y flase si no*/
      let flag =guardar(bd.usuarios, {
-    clave:clave_usu.value,
+
      fecha:nombre_usu.value,
      comida:edad_usu.value,
      platillo:estatura_usu.value,
