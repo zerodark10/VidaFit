@@ -12,13 +12,14 @@ self.addEventListener('install', evento=>{
             return cache.addAll([
                
                 'css/style.css',
-                'index.html',
+                'home.html',
                 'js/app.js',
                 'img/logo.png',
+                'img/icons/72x72.png',
                 'home.html',
                 'mp4/bg.mp4',
-                'pages/offline.html',
-                'img/c1e.jpg'
+                'pages/offline.html'
+                
                 
                 
             
