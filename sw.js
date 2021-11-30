@@ -20,8 +20,8 @@ self.addEventListener('install', evento=>{
                 'mp4/bg.mp4',
                 'pages/offline.html',
                 'img/user.png',
-                'img/head1.png',
-                'img/head2.png'
+                'img/head1.jpg',
+                'img/head2.jpg'
                 
                 
                 
