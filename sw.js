@@ -12,7 +12,7 @@ self.addEventListener('install', evento=>{
             return cache.addAll([
                
                 'css/style.css',
-                'home.html',
+                'index.html',
                 'js/app.js',
                 'img/logo.png',
                 'img/icons/72x72.png',
