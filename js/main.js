@@ -5,7 +5,7 @@ import usuariobd, {guardar,consultar,crearEtiqueta} from './funciones.js';
 empleamos la función de tindabd para crear la base de datos tienda
 y la tabla de productos, para crear la tabla debemos indicar los atributos
 ++id indica que el id es auto incremental*/
-let bd=usuariobd("Vida-Fit", {usuarios:'++id,nombre, edad, estatura, peso, sexo, indice, salud'});
+let bd=usuariobd("Vida-Fit", {usuarios:'++id,fecha, comida, platillo, porcion, cantidad, agua, Imagen'});
 
 
 /*Genermaos un objeto para cada elemento del formulario que
@@ -16,13 +16,13 @@ los id de la etiqueta html*/
 
 //Objetos para acceder a lso input del formulario
 const clave_usu = document.getElementById("clave");
-const nombre_usu = document.getElementById("nombre");
-const edad_usu = document.getElementById("edad");
-const estatura_usu = document.getElementById("estatura");
-const peso_usu = document.getElementById("peso");
-const sexo_usu = document.getElementById("sexo");
-const indice_usu = document.getElementById("indice");
-const salud_usu = document.getElementById("salud");
+const nombre_usu = document.getElementById("fecha");
+const edad_usu = document.getElementById("comida");
+const estatura_usu = document.getElementById("platillo");
+const peso_usu = document.getElementById("porcion");
+const sexo_usu = document.getElementById("cantidad");
+const indice_usu = document.getElementById("agua");
+const salud_usu = document.getElementById("imagen");
 /*Objeto para acceder a etiqueta que nos mostrará un mesaje en la 
 tabla cuando no tengamos productos para mostrar*/
 const mesajeSinRegistros = document.getElementById("siRegistros");
