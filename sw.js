@@ -111,3 +111,14 @@ function limpiarCache(nombreCache, numeroItems){
                 });
         });
 }
+
+window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "4c1cf5c8-6e1f-4efd-905a-d189df4f0cb0",
+        safari_web_id: "web.onesignal.auto.5f2b561a-4bc4-4806-b010-c7853696b689",
+        notifyButton: {
+          enable: true,
+        },
+      });
+    });
