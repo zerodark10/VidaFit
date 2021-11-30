@@ -50,7 +50,7 @@ btGuardar.onclick=(evento)=>{
     asignamos a cada campo el valor recuperado del formulario
     Nota: Recordar que flag retorna true si se gaurdo el registro y flase si no*/
      let flag =guardar(bd.usuarios, {
-    clave:clave_usu.value,
+ 
      fecha:nombre_usu.value,
      comida:edad_usu.value,
      platillo:estatura_usu.value,
@@ -202,13 +202,13 @@ function btnEditar(evento) {
     bd.productos.get(id, usuario=>{
     //Asignamos al formulario el valor correspondiente del producto seleccionado
       clave_usu.value=usario.id||0;
-      nombre_usu.value=usuario.nombre||"";
-      edad_usu.value=usuario.edad||"";
-      estatura_usu.value=usuario.estatura||"";
-      peso_usu.value=usuario.peso||"";
-      sexo_usu.value=usuario.sexo||"";
-      indice_usu.value=usuario.indice||"";
-      salud_usu.value=usuario.salud||"";
+      nombre_usu.value=usuario.fecha||"";
+      edad_usu.value=usuario.comida||"";
+      estatura_usu.value=usuario.platillo||"";
+      peso_usu.value=usuario.porcion||"";
+      sexo_usu.value=usuario.cantidad||"";
+      indice_usu.value=usuario.agua||"";
+      salud_usu.value=usuario.imagen||"";
 
     })
 }
