@@ -50,13 +50,13 @@ btGuardar.onclick=(evento)=>{
     asignamos a cada campo el valor recuperado del formulario
     Nota: Recordar que flag retorna true si se gaurdo el registro y flase si no*/
      let flag =guardar(bd.usuarios, {
-     nombre:nombre_usu.value,
-     edad:edad_usu.value,
-     estatura:estatura_usu.value,
-     peso:peso_usu.value,
-     sexo:sexo_usu.value,
-     indice:indice_usu.value,
-     salud:salud_usu.value
+     fecha:nombre_usu.value,
+     comida:edad_usu.value,
+     platillo:estatura_usu.value,
+     porcion:peso_usu.value,
+     cantidad:sexo_usu.value,
+     agua:indice_usu.value,
+     imagen:salud_usu.value
      
  });
  
@@ -84,13 +84,13 @@ btModificar.onclick=(evento)=>{
         /*Ejecutamos la modificación, update requiere la clave del producto
         y los valores a modificar tomando los valores del formulario*/
         bd.usuarios.update(id,{
-            nombre:nombre_usu.value,
-            edad:edad_usu.value,
-            estatura:estatura_usu.value,
-            peso:peso_usu.value,
-            sexo:sexo_usu.value,
-            indice:indice_usu.value,
-            salud:salud_usu.value
+            fecha:nombre_usu.value,
+            comida:edad_usu.value,
+            platillo:estatura_usu.value,
+            porcion:peso_usu.value,
+            cantidad:sexo_usu.value,
+            agua:indice_usu.value,
+            imagen:salud_usu.value
         }).then((resultado)=>{//si se realiza la modificación
             if(resultado){
               //Limpiamos el formulario y recargamos la tabla
