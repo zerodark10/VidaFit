@@ -119,6 +119,7 @@ btModificar.onclick=(evento)=>{
 
 /*Evento click para ejecutar el borrado de la base de datos, 
 se activa al presionar el boton limpiar BD  del formulario*/
+/*
 btEliminarTodo.onclick=()=>{
     //Elimianmos la BD
        bd.delete();
@@ -129,7 +130,7 @@ btEliminarTodo.onclick=()=>{
        //Recargamos la vista
        location.reload();
       
-}
+}*/
 
 /*Función que agrega a la tabla cada producto registrado */
 function cargarTabla(){
