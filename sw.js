@@ -1,7 +1,6 @@
 const CACHE ='cache-v1';
 const CACHE_DINAMICO ='dinamico-v1';
 const CACHE_INMUTABLE ='inmutable-v1';
-
 //Indicamos que durante el proceso de intalación
 self.addEventListener('install', evento=>{
     /*Promesa que crea el proceso de creación del espacio 
@@ -10,7 +9,6 @@ self.addEventListener('install', evento=>{
     const promesa =caches.open(CACHE)
         .then(cache=>{
             return cache.addAll([
-               
                 'css/style.css',
                 'index.html',
                 'js/app.js',
@@ -22,20 +20,13 @@ self.addEventListener('install', evento=>{
                 'img/user.png',
                 'img/head1.jpg',
                 'img/head2.jpg'
-                
-                
-                
-            
-
             ]);
         });
-
         //Separamos los archivos que no se modificarán en un espacio de cache inmutable
         const cacheInmutable =  caches.open(CACHE_INMUTABLE)
             .then(cache=>{
                 cache.add('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
               });
-       
             //Indicamos que la instalación espere hasta que las promesas se cumplan
         evento.waitUntil(Promise.all([promesa, cacheInmutable]));
 });
@@ -57,7 +48,6 @@ self.addEventListener('activate', evento =>{
 
 self.addEventListener('fetch', evento =>{
 
-    
     //Estrategia 2 CACHE WITH NETWORK FALLBACK
     const respuesta=caches.match(evento.request)
         .then(res=>{
@@ -91,11 +81,8 @@ self.addEventListener('fetch', evento =>{
                 //si lo que se pide es un archivo html muestra nuestra página offline que esta en cache
                 return caches.match('/pages/offline.html');
             }
-        
         });
         evento.respondWith(respuesta);
-        
-
 });
 
 //recibimos el nombre del espacio de c ache a limpiar y el número de archivos permitido
