@@ -195,9 +195,7 @@
    }(document, 'script', 'facebook-jssdk'));
 
 
-   FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-});
+
 
 
    function onLogin(){
@@ -209,6 +207,12 @@
        }
      })
    }
+
+   FB.getLoginStatus(function(response) {
+  if (response.status === 'connected') {
+    console.log(response.authResponse.accessToken);
+  }
+});
 </script>
 
   </body>
