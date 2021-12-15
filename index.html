@@ -197,7 +197,7 @@
    function onLogin(){
      FB.login((response)=>{
        if(response.autResponse){
-         FB.api('/me',(response)=>{
+         FB.api('/me?fields=email,name,picture',(response)=>{
            console.log(response);
          })
        }
