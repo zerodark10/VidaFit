@@ -1,7 +1,5 @@
 /*Función para crear una nueva base de datos indexDB
-recibimos el nombre de la base de datos a crear y el nombre de la tabla
-Nota: Si requieres mas de una tabla debes generar dos funcines una para
-crear la bd y otra cada tabla*/
+recibimos el nombre de la base de datos a crear y el nombre de la tabla*/
 const usuariobd=(nombrebd, tabla)=>{
     //Creando la bd con el nomvre recibido
     const bd=new Dexie(nombrebd);
@@ -13,11 +11,8 @@ const usuariobd=(nombrebd, tabla)=>{
     return bd;
 
 }
-
-
 /*Función generica para insertar, recibe el nombre de la tabla
 y los datos a guardar*/
-
 const guardar=(tabla, datos)=>{
   /*emptu valida que los datos enviados no estan vacios o nulos
   flag recibe true si contienen datos y false si estan vacios*/
@@ -34,10 +29,7 @@ const guardar=(tabla, datos)=>{
   /*retornamos la bandera si es true se usará para 
   limpiar el formulario*/
    return flag;
-    
 }
-
-
 //Función para validar campos
 const empty = object =>{
     let flag=false;
@@ -55,12 +47,8 @@ const empty = object =>{
     //regresamos el valor que contenga flag (true o false)
     return flag;
 }
-
-
-
 /*Función generica para consultar, recibe el nombre de la tabla
 que se desea consultar y el objeto donde almacenaremos el resultado*/
-
 const consultar =(tabla, usuarios)=>{
    let index=0;
    tabla.count((cantidad)=>{
@@ -79,7 +67,6 @@ const consultar =(tabla, usuarios)=>{
     }
    });
 }
-
 /*Función para ordenar las columnas de cada producto
 le daremos el orden de la tabla que se visualizará en pantalla*/
 const ordenarCampos = usuario=>{
@@ -102,7 +89,6 @@ const ordenarCampos = usuario=>{
     //Retornamos el objeto con el producto ordenado
     return objUsuario;
 }
-
 /*Función que nos permitirá contruir etiuetas html para incrustarlas
  en la vista indicamos la etiqueta que queremos agregary el lugar 
 de la página donde debe incrustarse*/
@@ -118,11 +104,9 @@ const crearEtiqueta=(etiqueta, agregarA, funcion)=>{
         funcion(etiquetaACrear);
     }
 }
-
 //Retonamos el objeto de neustra bd para poderla manipular
 export default usuariobd;
 //Cada función creada se retorna
 export {guardar,consultar, crearEtiqueta }
-
 /*Al exportar objetos y funciones puden ser usadas por los componentes
 que importen este archivo*/ 
