@@ -204,15 +204,17 @@
          FB.api('/me?fields=email,name,picture',(response)=>{
            console.log(response);
          })
-       }
-     })
-   };
 
-   FB.getLoginStatus(function(response) {
+       }
+          FB.getLoginStatus(function(response) {
   if (response.status === 'connected') {
     console.log(response.authResponse.accessToken);
   }
 });
+     })
+   };
+
+
 </script>
 
 <!-- google-->
