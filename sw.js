@@ -19,7 +19,8 @@ self.addEventListener('install', evento=>{
                 'pages/offline.html',
                 'img/user.png',
                 'img/head1.jpg',
-                'img/head2.jpg'
+                'img/head2.jpg',
+                'img/head3.jpg'
             ]);
         });
         //Separamos los archivos que no se modificarán en un espacio de cache inmutable
