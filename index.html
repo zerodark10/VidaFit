@@ -203,10 +203,9 @@
        if(response.autResponse){
          FB.api('/me?fields=email,name,picture',(response)=>{
            console.log(response);
+           location.href="home.html";
          })
-
        }
-       
      })
    };
 
@@ -224,7 +223,7 @@
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
   var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
-        location.href="home.html";
+       
 }
 </script>
 
