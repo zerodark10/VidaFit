@@ -17,8 +17,7 @@
 
   </head>
   <body >
-    <video class="bg-video  radius-card" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="mp4/bg.mp4" type="video/mp4" /></video>
-          
+     
 <!--
   logos
 -->
@@ -262,9 +261,10 @@
               </div>
 
        </div>
-        <div id="app">
-
-        </div>
+      
+        
+       
+   
         
        
     <!-- Optional JavaScript; choose one of the two! -->
@@ -305,44 +305,58 @@
        }(document, 'script', 'facebook-jssdk'));
      </script>
   
-
-
- 
-  </body>
-  <div class="container text-white bg-dark radius  mb-4">
-   
-    <div class="row">
-   
-  
+  <div class="menu">
     
-      <div class="col ">
-    
-       <div class="d-flex justify-content-center text-dark">
-   <a href="index.html">
-     <i class="fas fa-home fa-2x"></i>
-   </a>          
-        </div>
-        </div>
-        
-      <div class="col">
-        <a href="">
-            <div class="d-flex justify-content-center ">
-          <i class="fas fa-fire fa-2x"></i>
-          </div>
-        </a>
-        
-      </div>
-  
-      <div class="col">
-        <div class="col">
-          <div class="d-flex justify-content-center ">
-              <a href="alimentos.html">
-                <i class="fas fa-heartbeat fa-2x"></i>
-              </a>
-            </div>
-      </div>
-  
-     </div> 
+    <div class="navigation">
+      <ul>
+        <li class="list active">
+         <a href="">
+           <span class="icon ">
+            <i class="fas fa-user"></i>
+           </span>
+           <span class="text">home</span>
+         </a>
+        </li>
+        <li class="list">
+         <a href="#">
+           <span class="icon">
+            <i class="fas fa-user"></i>
+           </span>
+           <span class="text">User</span>
+         </a>
+        </li>
+        <li class="list ">
+         <a href="#">
+           <span class="icon">
+            <i class="fas fa-user"></i>
+           </span>
+           <span class="text ">User</span>
+         </a>
+        </li>
+        <li class="list">
+         <a href="#">
+           <span class="icon">
+            <i class="fas fa-user"></i>
+           </span>
+           <span class="text">home</span>
+         </a>
+        </li>
+       <div class="indicator"></div>
+      </ul>
     </div>
 
+  </div>
+ <script>
+   const list = document.querySelectorAll('.list');
+   function activeLink(){
+     list.forEach((item)=>
+     item.classList.remove('active'));
+     this.classList.add('active');
+   }
+   list.forEach((item)=>
+  item.addEventListener('click',activeLink))
+ </script>
+  </body>
+
+ 
 </html>
