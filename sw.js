@@ -104,3 +104,7 @@ function limpiarCache(nombreCache, numeroItems){
         });
 }
 
+Notification.requestPermission().then(function(result) {
+    console.log("hosd");
+  });
+  
