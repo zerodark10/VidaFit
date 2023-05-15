@@ -9,12 +9,12 @@ self.addEventListener('install', evento=>{
     const promesa =caches.open(CACHE)
         .then(cache=>{
             return cache.addAll([
+                './',
                 'css/style.css',
                 'index.html',
                 'js/app.js',
                 'img/logo.png',
                 'img/icons/72x72.png',
-                'home.html',
                 'mp4/bg.mp4',
                 'pages/offline.html',
                 'img/user.png',
@@ -104,7 +104,5 @@ function limpiarCache(nombreCache, numeroItems){
         });
 }
 
-Notification.requestPermission().then(function(result) {
-    console.log("hosd");
-  });
+
   

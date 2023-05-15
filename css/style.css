@@ -31,7 +31,7 @@ body{
 }
 
 .img-1{
-    background-image: url('../img/head1.jpg');
+    background-image: url('../img/abs.jpg');
     background-size: cover;
     background-position: center;
     border-radius:25px;
@@ -73,9 +73,10 @@ display: inline-flex;
 }
 
 .logo{
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+   
+ position: relative;
+
+
     
 }
 
@@ -96,7 +97,7 @@ display: inline-flex;
     z-index: -1;
   }
   h5{
-      color: #16191c;
+      color: #2c95d3;
   }
 .img_user{
 padding-top: 20px;
@@ -197,12 +198,14 @@ padding-top: 20px;
     border-top-left-radius: 20px;
     box-shadow: -1px -10px 0 0 var(--ligth);
 }
-
+.opacidad{
+    opacity: 85%;
+}
 
 .menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+  
+    opacity: 85%;
 
 }
 .navigation ul li:nth-child(1).active ~ .indicator{
@@ -227,3 +230,22 @@ padding-top: 20px;
     transform: translateX(calc(70px* 4)) ;
 }
 
+
+@media screen and (max-width: 720px) {
+    .menu{
+        padding-top: 200px;
+    
+    }
+}
+    @media screen and (max-width: 1336px) {
+        .menu{
+            padding-top: 100px;
+        
+        }
+   
+    }
+    @media (max-width: 1336) {
+        p {
+          font-size: 6px;
+        }
+      }
